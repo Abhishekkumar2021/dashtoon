@@ -1,6 +1,6 @@
 import React from 'react'
 import './Comic.css'
-import {useLocation} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Loading from './Loading'
 import { Slide } from 'react-slideshow-image';
@@ -123,7 +123,7 @@ const Comic : React.FC = () => {
             {
                 error && <div className='error'>
                     <h1>{error}</h1>
-                    <a className='button' href="/">Go back to home</a>
+                    <Link className='button' to='/'>Go back to home</Link>
                 </div>
             }
         </div>

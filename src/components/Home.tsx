@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import Navbar from './Navbar'
 import { IoLogoGithub } from 'react-icons/io5'
+import { Link } from 'react-router-dom'
 
 const Home : React.FC = () => {
   return (
@@ -10,9 +11,10 @@ const Home : React.FC = () => {
         <div className="content">
             <h1>Welcome to <span>Comic Generator</span></h1>
             <p>Comic Generator is a web app that generates comic from a given prompt. It uses the power of <span>HuggingFace API</span> to generate comic from a given prompt. It is a fun project that I made as an assignment for the <span>Dashtoon.</span></p>
-            <a className='button' href="/start">Start comicing</a>
+            <Link className='button' to="/start">Start comicing</Link>
         </div>
-        <a className='contribute' href="https://github.com/Abhishekkumar2021/dashtoon"><IoLogoGithub className='icon' /> Contribute to this project</a>
+
+        <Link className='contribute' to="https://github.com/Abhishekkumar2021/dashtoon"><IoLogoGithub className='icon' /> Contribute to this project</Link>
     </div>
   )
 }

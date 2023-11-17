@@ -6,9 +6,7 @@ import {useNavigate} from 'react-router-dom'
 
 
 const Form : React.FC = () => {
-  // Create an array of 10 questions
-  // const [questions, setQuestions] = useState([])
-  const numQuestion = 1
+  const numQuestion = 10
   // create an array of numQuestion size
   const [questions, setQuestions] = useState(Array(numQuestion).fill({
     inputs: '',
