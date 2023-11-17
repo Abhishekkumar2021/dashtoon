@@ -4,7 +4,6 @@ import { GrLinkPrevious } from "react-icons/gr";
 import { VscSend } from "react-icons/vsc";
 import { IoInformationCircle } from "react-icons/io5";
 import Navbar from './Navbar';
-import { Link } from 'react-router-dom';
 
 
 type InputProps = {
